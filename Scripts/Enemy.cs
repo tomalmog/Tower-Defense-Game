@@ -39,6 +39,12 @@ public class Enemy : PathFollow2D
 
 			if (hp <= 0)
 			{
+				//var game = GetTree();
+				//	GD.Print(game.Root.GetPropertyList());
+
+				var game = area.GetTree().Root;
+				GD.Print(game);
+				
 				QueueFree();
 			}
 
